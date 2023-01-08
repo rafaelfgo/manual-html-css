@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+        font-family: costa_nova;
+        src: url(fontes/costa_nova.otf);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Bubbles&display=swap');
+        #externo{
+            font-family: 'Rubik Bubbles';
+        }
+        p{
+            background-color: rgb(214, 214, 213);
+            margin: 3px;
+            width: 400px;
+            font-weight: bolder;
+        }
+        #p1{
+            color: rgb(12, 175, 175);
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #p2{
+            color: rgb(255, 154, 2);
+            font-size: 2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #p3{
+            color: blueviolet;
+            font-size: 3em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #interno{
+            font-family: 'costa_nova', Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+<code>
+<h1>[color] [font-size] [font-family]</h1>   
+#p1{
+    color: aqua;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#p2{
+    color: rgb(255, 154, 2);
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#p3{
+    color: blueviolet;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+<p id="p1">PALAVRA 1</p>
+<p id="p2">PALAVRA 2</p>
+<p id="p3">PALAVRA 3</p>
+<h2>[font-family] - externo</h2> 
+Google fonts > selecione a fonte > fontes selecionadas > procure style da fonte > copie e cole no style.
+<img src="imagens/fonte.png" alt="fontes">
+<p id="externo">Letra com fonte externa. A B C D E F G @ # % $</p>
+
+<h2>[font-family] - interno, baixado</h2>
+Site recomendado para fontes para baixar: <a href="https://www.dafont.com/pt/">https://www.dafont.com/pt/</a>
+_______________________________________
+&lt;style&gt;
+    @font-face {
+        font-family: costa_nova;
+        src: url(fontes/costa_nova.otf);
+        }
+
+    #interno{
+        font-family: 'costa_nova';
+    }
+&lt;/style&gt;
+________________________________________    
+<p id="interno">Letra com fonte interna baixada A B C D E F $ 3 Á</p>
+
+<h3>Importante: é bom saber adicionar outros tipos de arquivos da mesma fonte, caso o navegador não seja compatível com aquele tipo de arquivo.</h3>
+_______________________________________
+&lt;style&gt;
+    @font-face {
+        font-family: costa_nova;
+        src: url(fontes/costa_nova.otf), <mark>url(fontes/costa_nova2.ttf)</mark>;
+        }
+
+    #interno{
+        font-family: 'costa_nova';
+    }
+&lt;/style&gt;
+________________________________________   
+
+
+<h3>Posso adicionar outros detalhes como [weight], [size]</h3> 
+_______________________________________
+&lt;style&gt;
+    @font-face {
+        font-family: costa_nova;
+        src: url(fontes/costa_nova.otf), url(fontes/costa_nova2.ttf);
+  <mark>font-size: 20px;</mark>
+  <mark>font-weight: bold;</mark>
+        }
+
+    #interno{
+        font-family: 'costa_nova';
+    }
+&lt;/style&gt;
+________________________________________   
+</code>
+</pre>
+
+<a href="manual.html">Página Inicial</a>
+</body>
+</html>

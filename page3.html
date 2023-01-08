@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>[source] [video]</h1>
+<pre>
+<code>
+    <h2>Introdução</h2>
+É importante saber que vídeos pesam e por isso devemos ter cuidado com hospedar vídeos no próprio site.
+Algumas possibilidades para colocar vídeos no site é ter um outro local para hospedar os sites. <br>
+    <h2>Converter vídeos</h2>
+É importante ter algum programa para converter vídeos em formatos diferentes, caso eu hospede no meu próprio site, pois pode ser que o servidor do usuário 
+não consiga abrir em certo formato, além do peso do arquivo. Um programa recomendado é o HANDBREAK.
+    <h2>Vídeos Internos</h2>
+1. Forma - A mais simples com a tag [video] apenas.
+&lt;video src="________"&gt;&lt;/video&gt;
+
+1.1 Lembre-se do parâmetro [controls] para aparecer os controles.
+&lt;video src="________" controls&gt;&lt;/video&gt;
+
+1.2 Posso modificar o tamanho com o parâmetro [width]
+&lt;video src="________" controls width="______"&gt;&lt;/video&gt;
+
+1.3 Posso adicionar outro parâmetro chamado [loop].
+&lt;video src="________" controls width="______" loop&gt;&lt;/video&gt;
+
+2. Forma - com vários formatos para abrir em todos navegadores.
+&lt;video controls width="300px"&gt;
+    &lt;source src="midia/meu-video.mp4" type="video/mp4"&gt;
+    &lt;source src="midia/meu-video.m4v" type="video/mp4"&gt;
+    &lt;source src="midia/meu-video.webm" type="video/webm"&gt;
+    &lt;source src="midia/meu-video.ogv" type="video/ogg"&gt;
+&lt;/video&gt;
+Para saber o type de cada vídeo procure na internet.
+    <h2>Videos Externos</h2>
+1. Através da tag [iframe]. Só copiar e colar o iframe de onde está o vídeo.
+&lt;iframe&gt; width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe&gt;
+
+</code>
+</pre>
+<a href="manual.html">Página Inicial</a>    
+</body>
+</html>

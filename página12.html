@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 16</title>
+    <style>
+        body{
+            background-color: rgb(255, 232, 150);
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-image: linear-gradient(to bottom, green, rgb(0, 0, 0));
+            padding: 5px;
+            margin: 0px;
+        }
+        #cabeca > h1{
+            text-align: center;
+            color: white;
+            font-weight:bolder;
+        }
+        #cabeca > p{
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav > a{
+            color: greenyellow;
+            margin: 2px 5px 4px 7px;
+            padding: 2px;
+            font-size: 18px;
+            text-decoration: none; 
+        }
+        nav > a:hover{
+            background-color: rgb(0, 187, 0);
+            border-radius: 3px;
+        }
+        main{
+            background-color: white;
+            margin: 0px 40px 0px 40px;
+            padding: 8px;
+        }
+        main > h1{
+            font-size: 2em;
+        }
+        #frente{
+            margin-left: 8px;
+            padding: 3px;
+        }
+        article > h2{
+            background-image: linear-gradient(to right, rgb(116, 253, 116), white);
+            font-size: 18px;
+            padding: 3px 0px 3px 14px;
+        }
+        article > p{
+            margin: 8px;
+            text-indent: 25px;
+            text-align: justify;
+        }
+        .links{
+            background-color: rgba(0, 211, 0, 0.738);
+            padding: 2px;
+            border-radius: 2px;
+            text-decoration: none;
+        }
+        .links:hover{
+            background-color: rgba(77, 255, 77, 0.738);
+            padding: 2px;
+            border-radius: 2px;
+            text-decoration: underline;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="cabeca">
+            <h1>CURIOSIDADES DE TECNOLOGIA</h1>
+            <p id="frente">Tudo aquilo que você sempre quis saber sobre o mundo Tech em um único lugar.</p>
+        </div>
+        <nav>
+            <a href="cssmanual.html">Home</a>
+            <a href="https://google.com">Notícias</a>
+            <a href="https://google.com">Curiosidades</a>
+            <a href="https://google.com">Fale conosco</a>
+        </nav>
+    </header>
+    <main>
+        <h1>HISTÓRIAS DO MASCOTE DO ANDROID</h1>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi impedit cumque voluptas culpa dolorem veniam corporis. Nemo autem sequi ducimus odit omnis, temporibus impedit animi incidunt inventore praesentium vitae.lorem</p>
+        </section>
+        <section>
+            <article>
+                <h2>A PRIMEIRA VERSÃO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi non officia iusto dolor. Repellendus beatae odio distinctio consequatur omnis maxime <a href="" class="links">encontre aqui</a> tempore, deleniti explicabo necessitatibus libero possimus repudiandae itaque aut. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, officiis quos? Est magnam <a href="" class="links">Legal</a> libero asperiores in tempora aperiam veniam maxime amet maiores, cupiditate distinctio harum, quos voluptatum, cum voluptatem id!</p>
+                <div class="imagens">
+                    <img src="img16/robo.vermelho.png" alt="robô vermelho">
+                    <img src="img16/robo.azul.png" alt="robô azul">
+                    <img src="img16/robo.amarelo.png" alt="robô amarelo">
+                    <img src="img16/robo.verde.png" alt="rôbo verde">
+                </div>
+                <p>Essa primeira versão foi batizada de ucaucalele.</p>
+            </article>
+            <article>
+                <h2>SURGE UM NOVO MASCOTE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officiis suscipit enim praesentium assumenda recusandae. Distinctio, obcaecati explicabo ex unde, mollitia iure aliquid voluptate sapiente quibusdam est amet aperiam nam!</p>
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="img16/cientista.grande.png" type="image/png">
+                    <img src="img16/cientista.pequeno.png" alt="cientista trabalhando">
+                </picture>
+            </article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum sapiente temporibus, aut enim et quaerat nostrum facilis eius veniam repellat tempore repudiandae aliquid molestias doloremque voluptate non. Ex, ipsa.
+                <img src="imagens/box.png" alt="imagem de box">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5K4pEk19nhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+        </section>
+        
+    </main>
+    <footer>
+        Site desenvolvido por FG
+    </footer>
+</body>
+</html>

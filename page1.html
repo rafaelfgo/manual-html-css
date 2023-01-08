@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>[picture] [source] [img]</h1>
+        <h2>[picture]</h2>
+        <p>A tag [picture] é usada para carregar vários elementos [source]. Essa é a diferença primordial de quando devo usar [picture] e não apenas a tag [img]</p>
+    </div>
+    <div>
+        <h2>[picture] [source]</h2>
+        Então a tag picture e source juntas permitem que eu tenha um grupo de imagens que podem aparecer em um espaço que de acorda com o parâmetro ela muda.
+<pre>
+<code>
+    picture
+        source media="(min-width: 1000px)" srcset="img16/robo.amarelo.png" type="image/png"
+        source media="(min-width: 700px)" srcset="img16/robo.verde.png" type="image/png"
+        img src="img16/robo.vermelho.png" alt="robo vermelho"
+    picture
+</code>
+</pre>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="img16/robo.amarelo.png" type="image/png">
+            <source media="(min-width: 700px)" srcset="img16/robo.verde.png" type="image/png">
+            <img src="img16/robo.vermelho.png" alt="robo vermelho">
+        </picture>
+    </div>
+    <div>
+        <h2>[img]</h2>
+        Posso carregar imagens no site de forma interna (meu servidor) ou de forma externa (servidor externo). <br> <br>
+        img src="______" alt="_____" <br> <br>
+        src - pode ser um link externo ou interno <br>
+        alt - descrição da imagem.
+    </div>
+    <br>
+    <a href="manual.html">Página incial</a>
+</body>
+</html>

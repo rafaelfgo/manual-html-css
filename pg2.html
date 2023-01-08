@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: rgb(234, 227, 218);
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            background-color: white;
+            margin: 30px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>[background-image]</h1>
+    <div id="p1">
+        <h2>As formas de representar as cores</h2>
+        <p>
+            Existem 4 formatos para usar as cores no CSS3, são eles: <br>
+            hexadecinal #0000ff <br>
+            hsl - (cor, saturação, luminosidade)<br>
+            rgb - (red, green, blue)<br>
+            rgba - tem a opção de deixar transparente
+        </p>
+    </div>
+    <div id="p2">
+        <h2>Como descobrir a numeração de uma cor</h2>
+        <p>
+            salve a imagem e abra no photoshop depois use a ferramenta que coleta a cor para ver a numeração
+        </p>
+    </div>
+    <div id="p3">
+        <h2>Como fazer degradê no CSS</h2>
+        <p>
+            Para fazer o degradê use a tag: <br> <br>
+            <strong>background-image: linear-gradient(_______);</strong> <br> <br>
+            Dentro do gradient a direção pode variar os lados. Pode ser escrito como "right,left" e como "ângulos". Exemplo: <br>
+            background-image: linear-gradient(to right, white, blue); <br> background-image: linear-gradient(to left, white, blue); <br>
+            background-image: linear-gradient(to top, white, blue); <br>
+            background-image: linear-gradient(to bottom, white, blue);
+        
+            <div style="background-image: linear-gradient(to right, white, rgb(182, 182, 249), rgb(249, 143, 249)); font-size: 30px; text-align: center;"> background-image: linear-gradient(to right, white, blue, purple)</div>
+            <div style="background-image: linear-gradient(180deg, rgb(255, 148, 148), rgb(163, 163, 255), rgb(221, 130, 221)); font-size: 30px; text-align: center;">
+            background-image: linear-gradient(180deg, rgb(207, 26, 26), blue, purple);
+            </div>
+        </p>
+    </div>
+    <a href="manual.html">Página inicial</a>
+</body>
+</html>

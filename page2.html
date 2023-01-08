@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>[audio] [source]</h1>
+    <div>
+        <h2>Audio e Source</h2>
+<pre>
+<code>
+Posso colocar vários tippos de arquivos de áudio para o tipo que melhor abrir no navegador.
+src - a localização do arquivo.
+type - o formato do arquivo.    
+    audio
+        source src="____" type="_____"
+        source src="____" type="_____"
+        source src="____" type="_____"
+    audio
+
+Alguns parâmetros importantes para colocar dentro da tag aúdio:
+- control - aparecer os controles
+
+- preload - funções associadas ao carregamento do arquivo
+  - auto - ele só vai considerar que o site terminou de carregar se o audio estiver carregado todo também. [vem como padrão]
+  - metadata - ele carrega informações básicas do aúdio, antes do usuário apertar o play [recomendado]
+  - none - ele não carrega nada do arquivo de aúdio até o usuário apertar o play.
+
+- loop - o áudio ao chegar no final volta para o início.
+</code>
+</pre>
+<h2>auido - Type</h2> 
+<code>
+<pre>
+O type é para informar o tipo de arquivo e cada arquivo possui uma forma especifica. Pode ser conferido em alguns site.
+
+audio controls preload="metadata"
+    source src="pasta/well.mp3" type="audio/mpeg"
+    source src="pasta/well.ogg" type="audio/ogg"
+    source src="pasta/well.wav" type="audio/wav"
+/audio
+</code>
+</pre>
+    </div>
+    <a href="manual.html">Página inicial</a>
+</body>
+</html>

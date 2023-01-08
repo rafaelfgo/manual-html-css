@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        /*Observe que body pintou a tela toda [background-color]*/
+        /*O [margin=0] no body delimita as paredes da tela até o conteudo interno do site*/ 
+        body{
+            background-color: rgb(128, 180, 225);
+            margin: 0px;           
+        }
+
+        /*Como se trata de uma [div] não existem margens automáticas*/
+        /*O comando [border: solid;] faz a bordar aparecer*/
+        #bloco1{
+            background-color: aqua;
+            border: solid;
+        }
+
+        #bloco2{
+            background-color: rgb(107, 255, 81);
+        }
+        
+        /*Ignore o [margin-bottom=0], ele é para o próximo exemplo*/
+        #p1{
+            background-color: white;
+            margin-bottom: 0px;
+        }
+        
+        /*[margin-bottom=0] do p1 e [margin=0] do p2 garantem que os blocos se encostem*/
+        #p2{
+            background-color: rgb(255, 118, 180);
+            margin: 0px;
+        }
+        /*CONCLUSÃO: EXISTEM TAGS QUE POSSUEM ESPAÇAMENTOS AUTOMÁTICOS, FIQUE ATENTO.*/
+    </style>
+</head>
+<body>
+    <div id="bloco1">Bloco1</div>
+    <div id="bloco2">Bloco2</div>
+    
+    <p id="p1">Aqui estou usando a tag [p] que possui automaticamente [margin=1em]. Por isso existe esse espaçamento entre a [div] e esse parágrafo.</p>
+
+    <p id="p2">Aqui fiz uma configuração para o [margin=0] dessa tag [p] para poder tocar o [p] da tag de cima.</p>
+</body>
+</html>

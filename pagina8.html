@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 e HTML</title>
+    <style>
+        h1{
+            background-color: rgb(163, 236, 236);
+        }
+        div{
+            background-color: rgb(150, 195, 235);
+        }
+        .t1{
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border: 2px solid black;
+            display: inline-block; /*coloca os objetos em linha (eixo X)*/
+        }
+        .t2{
+            width: 200px;
+            height: 200px;
+        }
+        .t2:hover{
+            background-color: rgb(250, 247, 61);
+        }
+        a{
+            color: rgb(44, 79, 177);
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(0, 39, 39);
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .ex3:active{
+            color: rgb(156, 228, 23);
+            background-color: black;
+            width: 750px;
+        }
+        .ex4::after{
+            content: ' [Link]';
+            color: rgb(0, 0, 0);
+            font-weight: lighter;
+        }
+        .ex5 > p{
+            display: none;
+        }
+        .ex5:hover > p{
+            display: block;
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a mexer com a tag div</h1>
+    <p>a div é um espaço que ocupa de ponta a ponta. Como os exemplos abaixo</p>
+    <div>01</div> <br>
+    <div>02</div> <br>
+    <div>03</div>
+    <p>Conforme eu dimensiono largura e altura vou dando forma a ela. Com elementos [width] [height] [border] [display]</p>
+    <div class="t1">Teste1</div>
+    <div class="t1">Teste2</div>
+    <h1>Pseudoclasses</h1>
+    <p>A pseudoclasse tem uma relação com o estado de um elemento. Para usar as pseudoclasses escreva a [tag] + [:] + [pseudoclasse] <br> 
+    Exemplo: div:hover{ }
+    </p>
+    <h2>Pseudoclasse - hover</h2>
+    <p>A pseudoclasse tem uma relação com o estado de um elemento.</p>
+    <div class="t2">Esse bloco possui a pseudoclasse hover que diz que ao passar o mouse por cima ela muda de cor</div>
+    <h2>Pseudoclasse - visited</h2>
+    <p>a pseudoclasse visited é se o usuário já clicou naquele link, caso a ação tenha ocorrido posso deixar algum comando, como uma cor diferente e posso colocar + um hover</p>
+    <a href="https://netflix.com">Netflix</a> <br>
+    <a href="https://youtube.com">Youtube</a>
+    <h2>Pseudoclasse - active</h2>
+    <p class="ex3">Essa pseudoclasse serve para quando eu clico com o mouse ele fará uma função. Clique aqui nesse parágrafo</p>
+    <h1>Pseudoelemento</h1>
+    <p>O pseudoelemento é relacionado com o físico mesmo, não com uma ação</p>
+    <h2>Pseudoelemento: ::after e ::before</h2>
+    <a class="ex4" href="https://google.com">Google</a>
+    <h1>Tag filho</h1>
+    <p>A tag filho é usada no style dessa forma: <br> div > p { }</p>
+</body>
+</html>

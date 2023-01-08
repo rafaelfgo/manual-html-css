@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>A anatômia das letras</h1>
+    <p>
+        serifa - são as pontas que aparecem nas letras. Serifa serve para criar linhas imaginárias, como ligasse com palavras. Impressões em papel é recomendado o uso de serifa.<br>
+        san-serif - fonte sem serifa. Especialistas falam que em textos muitos longos em impressões virtuais dÊ preferência a textos não serifados.<br>
+        monoespaçada - essas fontes deixam o mesmo espaçamento entre as letras.
+    </p>
+    <p>
+        para o tamanho da letra o mais recomendado é usar: <br>
+        medida absoluta: pixel (px) <br>
+        medida relativa: (em) <br> <br>
+        Normalmente 16 px é o tamanho normal da fonte. <br>
+        font-size: 16px;
+    </p>
+    <p>
+        Como trabalhar com medida relativa? <br>
+        A fonte de tamanho relativa é bom pois vai depender do tamanho da tela. Por esse motivo é melhor usar em como tamanho. 1em = 16px. <br>
+        font-size: 1em;
+    </p>
+    <h2>Peso da letra</h2>
+    <p style="font-family: 'work Sans'; font-weight: bolder;">
+        existem letras específicas que possuem variações de peso. Após ter escolhido a letra que possue peso posso escolher a intensidade desse peso. Com: [lighter] [normal] [bold] [bolder] <br>
+        font-family: 'work Sans'; <br>
+        font-weight: bolder; <br><br>
+        Obs.: algumas fontes tem variações para weight, com variações numericas de 100 a 900.
+    </p>
+    <h2>Fonte style</h2>
+    <p style="font-style: italic;">
+        font-style: italic;
+    </p>
+    <h2>Fonte sublinhado</h2>
+    <p style="text-decoration: underline;">
+        text-decoration: underline;
+    </p>
+    <h2>Encurtando o código</h2>
+    <p>
+        font-style: italic; <br>
+        font-weight: bold; <br>
+        font-size: 1em; <br>
+        font-family: 'work Sans'; <br><br>
+        Para simplicar o código posso escrever o seguinte obedecendo a ordem de cima: <br>
+        font: italic bold 1em 'work Sans', sans-serif;
+    </p>
+    <h2>Google fonts</h2>
+    
+    <a href="cssmanual.html">Página inicial</a>
+</body>
+</html>
