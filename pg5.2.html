@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div.quadrado{
+            background-color: gray;
+            border: 2px solid black;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+        }
+        #q1{
+            background-color: rgb(255, 230, 200);
+        }
+        #q2{
+            background-image: linear-gradient(to right, yellow, blue);
+        }
+        #q3{
+            background-image: url(imagens/fotodefundo.png);
+        }
+    </style>
+</head>
+<body>
+    <h1>[background-image] [Border] [display] shorthand</h1>
+<a href="manual.html">Página inicial</a>
+<pre>
+<code>
+Comando para criar as boxes e colocar uma do lado da outra
+&lt;style&gt;
+div.quadrado{
+    background-color: gray;<mark>
+    border: 2px solid black;
+    display: inline-block;</mark>
+    width: 300px;
+    height: 300px;
+}
+#q1{
+    background-color: rgb(255, 230, 200);
+}
+#q2{
+    background-image: linear-gradient(to right, yellow, blue);
+}
+#q3{
+    background-image: url(imagens/fotodefundo.png);
+}
+&lt;/style&gt;
+--------------
+&lt;body&gt;
+    &lt;div class="quadrado" id="q1"&gt;&lt;/div&gt;
+    &lt;div class="quadrado" id="q2"&gt;&lt;/div&gt;
+    &lt;div class="quadrado" id="q3"&gt;&lt;/div&gt;  
+&lt;body&gt;
+
+Aplicação prática:
+</code>
+</pre>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
