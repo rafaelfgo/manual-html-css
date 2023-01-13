@@ -30,7 +30,20 @@
 <a href="manual.html">Página inicial</a>
 <pre>
 <code>
-Comando para criar as boxes e colocar uma do lado da outra
+[display: inline-block;] - Comando para criar as boxes e colocar uma do lado da outra 
+
+[background-imagem: url();] - Essas imagens adicionadas no background-image tem apenas função estética, não possuem função semântica.
+Imagem externa - basta colocar o link, porém lembre-se que caso a imagem saia do ar ela irá sumir tambem do site.
+
+[background-size] - a mudança no tamanho da imagem por CSS não altera o tamanho do arquivo original.
+
+[background-repeat] - O padrão é repetir
+Repetição de imagem -  Por padrão a imagem é jogada em seu tamanho original e caso seja menor ela será copiada várias vezes até completar todo o 
+espaço, caso ela seja maior ela será cortada.
+
+-----------------------------------------------------
+Os três tipos de background
+-----------------------------------------------------
 &lt;style&gt;
 div.quadrado{
     background-color: gray;<mark>
@@ -49,13 +62,40 @@ div.quadrado{
     background-image: url(imagens/fotodefundo.png);
 }
 &lt;/style&gt;
---------------
+
 &lt;body&gt;
     &lt;div class="quadrado" id="q1"&gt;&lt;/div&gt;
     &lt;div class="quadrado" id="q2"&gt;&lt;/div&gt;
     &lt;div class="quadrado" id="q3"&gt;&lt;/div&gt;  
 &lt;body&gt;
-
+----------------------------------------------------------------------
+Outros fundos que podemos aplicar é no próprio fundo do site (no body)
+-----------------------------------------------------------------------
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+    }
+&lt;/style&gt;
+-------------------------------------------------------
+Usando [background-size]
+-------------------------------------------------------
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+        background-size: 100px 100px;
+    }
+&lt;/style&gt;
+-------------------------------------------------
+Usando [background-repeat]
+-------------------------------------------------
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+        background-repeat: no-repeat;
+    }
+&lt;/style&gt;
+Opções de: no-repeat, repeat-x, repeat-y...
+------------------------
 Aplicação prática:
 </code>
 </pre>
@@ -68,5 +108,6 @@ Aplicação prática:
     <div class="quadrado" id="q3">
 
     </div>
+
 </body>
 </html>
