@@ -12,6 +12,12 @@ h2{
     font-size: 22px;
     padding-left: 3px;
 }
+h3{
+    margin: 0px;
+}
+p{
+    margin-top: 0px;
+}
 a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;

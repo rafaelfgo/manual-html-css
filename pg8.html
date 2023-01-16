@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #container{
+            height: 300px;
+            position: relative;            
+        }
+        #direita{
+            position: absolute;
+            top: 20px;
+            left: 250px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+<code>
+    <h1>[position] e [transform]</h1> <a href="manual.html">Página inicial</a>
+    <h2>[position] - relative e absolute</h2>
+Para usar esse comando tenho que estabelecer a relação relativa e absoluta.
+O bloco que contem o bloco menor será a posição relativa.
+O bloco contido será o de posição absoluta.
+
+Após definir esses parâmetros podemos ir no bloco com posição absoluta e marcar "top" e "left" dele em relação ao bloco relativo.
+
+#container{
+    position: relative;
+}
+
+#conteudo{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+
+}
+
+<h3>top e left - %</h3>
+IMPORTANTE - essa distância que são marcadas em pixel ou % são em ao ponto mais extremo ao noroeste do bloco.
+Por isso ao colocar top: 50% e left: 50%, o conteúdo não irá centralizar dentro do container. A imagem abaixo mostra como ficaria o bloco com esse tipo de centralização.
+<div id="container">
+    <div id="esquerda">
+#container{
+    position: relative;
+}
+        
+#conteudo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+        
+}
+    </div>
+    <div id="direita"><img src="imagens/noroeste.png" style="width: 400px;" alt="demonstração"></div>
+</div>
+    <h2>[transform]</h2>
+<h3>translate</h3>
+O transform translate serve para eu mudar essa posição padrão que deixa a ponta na região 50% 50% do bloco relativo.
+
+#container{
+    position: relative;
+}
+        
+#conteudo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate (-50%, -50%);
+}
+
+Se for 50% do que foi movido será a matedade, por isso centraliza.
+
+</code>
+</pre>
+</body>
+</html>

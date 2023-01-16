@@ -6,31 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        div.quadrado{
-            background-color: gray;
-            border: 2px solid black;
-            display: inline-block;
-            width: 300px;
-            height: 300px;
-        }
-        #q1{
-            background-color: rgb(255, 230, 200);
-        }
-        #q2{
-            background-image: linear-gradient(to right, yellow, blue);
-        }
-        #q3{
-            background-image: url(imagens/fotodefundo.png);
-        }
-    </style>
 </head>
 <body>
-    <h1>[background-image] [Border] [display] shorthand</h1>
+    <pre>
+        <code>
+<h1>[background] [Border] [display] shorthand</h1>
 <a href="manual.html">Página inicial</a>
-<pre>
-<code>
-[display: inline-block;] - Comando para criar as boxes e colocar uma do lado da outra 
 
 [background-imagem: url();] - Essas imagens adicionadas no background-image tem apenas função estética, não possuem função semântica.
 Imagem externa - basta colocar o link, porém lembre-se que caso a imagem saia do ar ela irá sumir tambem do site.
@@ -41,73 +22,186 @@ Imagem externa - basta colocar o link, porém lembre-se que caso a imagem saia d
 Repetição de imagem -  Por padrão a imagem é jogada em seu tamanho original e caso seja menor ela será copiada várias vezes até completar todo o 
 espaço, caso ela seja maior ela será cortada.
 
------------------------------------------------------
-Os três tipos de background
------------------------------------------------------
-&lt;style&gt;
-div.quadrado{
-    background-color: gray;<mark>
-    border: 2px solid black;
-    display: inline-block;</mark>
-    width: 300px;
-    height: 300px;
-}
+
+<h1>Os tipos de background</h1>
+1- background-color ;
+2- background-image: linear-gradient();
+3- background-image: url();
+4- background-repeat: ;
+5- background-size: ;
+6- background-position: ;
+
+-----------------------------------
+1- background-color ;
 #q1{
     background-color: rgb(255, 230, 200);
 }
+-----------------------------------
+2- background-image: linear-gradient();
 #q2{
     background-image: linear-gradient(to right, yellow, blue);
 }
+-----------------------------------
+3- background-image: url();
 #q3{
     background-image: url(imagens/fotodefundo.png);
 }
-&lt;/style&gt;
-
-&lt;body&gt;
-    &lt;div class="quadrado" id="q1"&gt;&lt;/div&gt;
-    &lt;div class="quadrado" id="q2"&gt;&lt;/div&gt;
-    &lt;div class="quadrado" id="q3"&gt;&lt;/div&gt;  
-&lt;body&gt;
-----------------------------------------------------------------------
-Outros fundos que podemos aplicar é no próprio fundo do site (no body)
------------------------------------------------------------------------
-&lt;style&gt;
-    body{
-        background-image: url(imagens/fotodefundo.png);
-    }
-&lt;/style&gt;
--------------------------------------------------------
-Usando [background-size]
--------------------------------------------------------
+<h2>Usando [background-size]</h2>
+<h3>Usando pixels</h3>
+Usando 100px de largura e 100px de altura do body.
 &lt;style&gt;
     body{
         background-image: url(imagens/fotodefundo.png);
         background-size: 100px 100px;
     }
 &lt;/style&gt;
--------------------------------------------------
-Usando [background-repeat]
--------------------------------------------------
+
+<h3>Usando porcentagem</h3>
+Usando 100% da largura e 100% da altura do body.
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+        background-size: 100% 100%;
+    }
+&lt;/style&gt;
+
+<h3>Usando cover</h3>
+O cover vai cobrir todo o body com a imagem.
+Caso1: se a tela for maior: ele expande a imagem para caber no body
+Caso2: se a tela for menor: ela diminui a imagem para caber no <body>
+Caso3: saiba que o body não é a viewport, para isso teria que configurar a altura do body para ser a viewport.    
+</body>
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+        background-size: cover;
+    }
+&lt;/style&gt;
+
+<h3>Usando contain</h3>
+O contain faz com que a imagem apareça de forma completa na tela sem alterar suas dimensões, ou seja, se a tela for menor a imagem será diminuida para caber ali.
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+        background-size: contain;
+    }
+&lt;/style&gt;
+
+<h3>Usando auto</h3>
+O auto o navegador que irá ajustar a imagem de acordo com o tamanho dela. Essa aqui é a configuração padrão.
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+        background-size: auto;
+    }
+&lt;/style&gt;
+
+
+<h2>Usando [background-repeat]</h2>
+Por padrão o background-repeat vem como "repeat".
+<h3>no-repeat</h3>
 &lt;style&gt;
     body{
         background-image: url(imagens/fotodefundo.png);
         background-repeat: no-repeat;
     }
 &lt;/style&gt;
-Opções de: no-repeat, repeat-x, repeat-y...
+
+<h3>repeat-x ou repeat-y</h3>
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+        background-repeat: repeat-x;   
+        background-repeat: repeat-y;    (ou um ou outro)
+    }
+&lt;/style&gt;
+
+<h2>Usando [background-position]</h2>
+Por padrão o alinhamento é: left top.
+
+background-position: center center;
+background-position: right top;
+background-position: right bottom;
+background-position: left top;
+background-position: left bottom;
+
+<h2>Usando [background-attachment]</h2>
+Attachment significa acessório. Possuindo várias funções acessórios
+
+<h3>fixed</h3>
+A imagem fica fixa, independente da rolagem da pagina.
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+        background-attachment: fixed;
+    }
+&lt;/style&gt;
+
+<h3>scroll</h3>
+A imagem rola junto com o conteúdo, é a configuração padrão.
+&lt;style&gt;
+    body{
+        background-image: url(imagens/fotodefundo.png);
+        background-attachment: scroll;
+    }
+&lt;/style&gt;
+
+<h2>background - Shorthand</h2>
+
+background shorthand ordem: [color] [imagem] [position]/[size] [repeat] [attachment]
+
+&lt;style&gt;
+    body{
+        background: black url('wallpaper002.jpg') center top/cover no-repeat fixed;
+    }
+&lt;/style&gt;
 ------------------------
 Aplicação prática:
-</code>
-</pre>
-    <div class="quadrado" id="q1">
 
-    </div>
-    <div class="quadrado" id="q2">
+<a href="pg5.3.html">Página de teste de background</a>
+<a href="pg5.4.html">Página de teste de background 2</a>
 
-    </div>
-    <div class="quadrado" id="q3">
+<h2>Mexendo na imagem de fundo</h2>
+De maneira automática o que acontece cmom uma foto que é colocada no site:
+Ela irá ocupar todo o tamanho dela na tela, e, caso seja menor que a tela, ela começará a se repetir para ocupar os espaços vazios sobrando.
+<img src="imagens/repeticao4.png" width="600px" alt="demonstração">
 
-    </div>
+<img src="imagens/repeticao.png"  style="width: 500px;" alt="demonstração">
 
+<h2>[acabar com a duplicação]</h2>
+background-repeat: no-repeat;
+Porém agora a imagem vai ter seu tamanho em sua totalidade, independente do tamanho da tela. Se a tela for maior irá ficar espaços brancos ou ficará cortada se a tela for menor.
+
+Para evitar isso podemos usamos:
+background-size: 100%; 
+background-size: 100% 100%; (para largura e comprimento)
+<img src="imagens/repeticao5.png" style="width: 600px" alt="demonstração">
+
+Observe que agora com esse comando a imagem no body deve opupar 100% do body que vai até um pouco abaixo do main.
+A parte restante branca da página é chamada de [viewport]
+<h2>body e viewport</h2>
+height: 100vh; (ajuste para a altura ocupar 100 da viewport)
+Posso aplicar no body. 
+
+Porém a imagem agora se mexe. Conforme vou diminuindo a página, ela desloca.
+<img src="imagens/repeticao2.png" style="width: 600px;" alt="demonstração">
+
+Porém agora a foto vai distorcer.
+
+
+Aqui uma consequência é o fundo ficar preto dependendo do tamanho da tela.
+
+
+
+[tela inteira] 
+
+
+
+background-repeat: no-repeat;
+
+
+background-size: 100%;
+        </code>
+    </pre>
 </body>
 </html>
