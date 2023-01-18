@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div.container {
+            position: relative;
+        }
+        div.segundo {
+            position: absolute;
+            left: 35em;
+            top: 6em;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+            padding: 5px;
+        }
+        thead, tfoot{
+            background-color: rgb(184, 184, 184);
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        <code>
+            <h1>Tabelas em HTML5</h1>
+As tabelas em HTML5 são úteis para formar tabelas que possuem uma importância semântica e, por isso, não devem ser usadas
+para fazer a estrutura do site em si.
+<h2>Estrutura básica das tabelas</h2>
+<div class="container">
+    <div id="primeiro">
+    Table - é a tabela
+    tr - a linha da tabela
+    th - elementos dentro da tabela (colunas)
+    
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;A1&lt;/td&gt;
+            &lt;td&gt;B1&lt;/td&gt;
+            &lt;td&gt;C1&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </div>
+    <div class="segundo">
+        <table id="tb1">
+            <tr id="tr1">
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<h2>Alinhamento dentro da tabela - CSS3</h2>
+td{
+    text-align: center; (alinhamento horizontal)
+    vertical-align: top; (alinhamento vertical)
+    vertical-align: middle;
+    vertical-align: bottom;
+}
+<h2>Linhas na tabela - CSS3</h2>
+Para colocar as linhas é só colocar as bordas, porém o comando por padrão tem espaços, nesse caso devemos usar um comando específico.
+
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid black;
+}
+<h2>Cabeça, Corpo, Pé da tabela</h2>
+Posso adicionar elementos na tabela que não são dados mas áreas que dizem o que são os dados abaixo.
+<div class="container">
+    <div>
+th - informação em relação aos dados
+td - dado da tabela
+thead - cabeçalho da tabela
+tbody - corpo da tabela
+tfoot - rodapé da tabela 
+
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Estado&lt;/th&gt;
+            &lt;th&gt;População&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;thead&gt;
+    <mark>&lt;tbody&gt;</mark>
+            &lt;tr&gt;
+                &lt;td&gt;São Paulo&lt;/td&gt;
+                &lt;td&gt;45.000.000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Minas Gerais&lt;/td&gt;
+                &lt;td&gt;45.000.000&lt;/td&gt;
+            &lt;/tr&gt;
+    <mark>&lt;tbody&gt;</mark>
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Total de Habitantes&lt;/th&gt;
+            &lt;td&gt;0000000000&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;tfoot&gt;
+&lt;/table&gt;
+    </div>
+    <div class="segundo">
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>21.000.000</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>17.000.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <td>00000000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+        </code>
+    </pre>
+</body>
+</html>
